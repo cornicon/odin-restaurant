@@ -1,5 +1,6 @@
 // console.log("hello restaurant")
 
+import "./styles.css";
 import { homeContent } from "./home.js";
 import { menuContent } from "./menu.js";
 import { aboutContent } from "./about.js";
