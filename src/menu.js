@@ -1,0 +1,1 @@
+export const menuContent = "This is the menu page"

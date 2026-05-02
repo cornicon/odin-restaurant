@@ -1,0 +1,1 @@
+export const homeContent = "This is the home page"
