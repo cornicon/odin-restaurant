@@ -13,16 +13,17 @@ const aboutBtn = document.getElementById("aboutBtn");
 
 const changeContent = function(event) {
     // console.log(event.target.id);
+    content.innerHTML = "";
     switch(event.target.id)
     {
         case "menuBtn":
-            content.innerHTML = menuContent
+            menuContent();
             break;
         case "aboutBtn":
-            content.innerHTML = aboutContent;
+            aboutContent();
             break;
         default:
-            content.innerHTML = homeContent;
+            homeContent();
     }
 }
 
@@ -30,4 +31,4 @@ homeBtn.addEventListener("click", changeContent);
 menuBtn.addEventListener("click", changeContent);
 aboutBtn.addEventListener("click", changeContent);
 
-content.innerHTML = homeContent;
+homeBtn.click();
